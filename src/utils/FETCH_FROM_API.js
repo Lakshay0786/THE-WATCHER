@@ -23,7 +23,7 @@ export const BASE_URL = 'https://www.googleapis.com/youtube/v3';
 // };
 
 export const fetchFromAPI = async (url) => {
-  const { data } = await axios.get(`${BASE_URL}/${url}&maxResults=50&regionCode=IN&key=${key}`);
+  const { data } = await axios.get(`${BASE_URL}/${url}&maxResults=50&regionCode=US&key=${key}`);
 
   return data;
 };
